@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,93 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="v1" id="BYZ-38-t0r" customClass="ViewController" customModule="Loginfb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-gm-F9F">
+                                <rect key="frame" x="159" y="60" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Shp-gm-F9F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="0OV-MX-FGj"/>
+                            <constraint firstItem="Shp-gm-F9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2R-kf-8QN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="estatusLbl" destination="Shp-gm-F9F" id="Os3-Z5-F1T"/>
+                        <segue destination="Kcl-sz-KEN" kind="show" identifier="v2" id="usO-wK-xeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+        <!--Logeado View Controller-->
+        <scene sceneID="JpP-RI-la6">
+            <objects>
+                <viewController storyboardIdentifier="logeado" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kcl-sz-KEN" customClass="LogeadoViewController" customModule="Loginfb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JBb-jB-d0S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuI-4h-4vw">
+                                <rect key="frame" x="94" y="46" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-o4-0h0">
+                                <rect key="frame" x="16" y="145" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1an-Ny-ztR">
+                                <rect key="frame" x="16" y="202" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgD-8g-vCh">
+                                <rect key="frame" x="131" y="338" width="46" height="30"/>
+                                <state key="normal" title="Salir"/>
+                                <connections>
+                                    <action selector="salirBtn:" destination="Kcl-sz-KEN" eventType="touchUpInside" id="DMh-br-PHj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IgD-8g-vCh" firstAttribute="leading" secondItem="h7l-oT-9Ms" secondAttribute="leading" constant="131" id="3DC-Js-1YB"/>
+                            <constraint firstItem="1an-Ny-ztR" firstAttribute="leading" secondItem="h7l-oT-9Ms" secondAttribute="leading" constant="16" id="3Mj-zG-tcS"/>
+                            <constraint firstItem="1an-Ny-ztR" firstAttribute="top" secondItem="IWa-o4-0h0" secondAttribute="bottom" constant="36" id="48b-Q9-cct"/>
+                            <constraint firstItem="IWa-o4-0h0" firstAttribute="leading" secondItem="h7l-oT-9Ms" secondAttribute="leading" constant="16" id="5iF-cS-j3c"/>
+                            <constraint firstItem="h7l-oT-9Ms" firstAttribute="trailing" secondItem="IgD-8g-vCh" secondAttribute="trailing" constant="198" id="8Jy-Uv-fYr"/>
+                            <constraint firstItem="IgD-8g-vCh" firstAttribute="top" secondItem="1an-Ny-ztR" secondAttribute="bottom" constant="115" id="8o9-6b-hLX"/>
+                            <constraint firstItem="LuI-4h-4vw" firstAttribute="leading" secondItem="h7l-oT-9Ms" secondAttribute="leading" constant="94" id="T99-tq-Ehw"/>
+                            <constraint firstItem="h7l-oT-9Ms" firstAttribute="trailing" secondItem="IWa-o4-0h0" secondAttribute="trailing" constant="16" id="YgK-Zj-1v7"/>
+                            <constraint firstItem="h7l-oT-9Ms" firstAttribute="trailing" secondItem="1an-Ny-ztR" secondAttribute="trailing" constant="16" id="alT-fU-c7D"/>
+                            <constraint firstItem="LuI-4h-4vw" firstAttribute="top" secondItem="h7l-oT-9Ms" secondAttribute="top" constant="26" id="bd3-sb-BOF"/>
+                            <constraint firstItem="h7l-oT-9Ms" firstAttribute="trailing" secondItem="LuI-4h-4vw" secondAttribute="trailing" constant="94" id="mDM-lV-B1h"/>
+                            <constraint firstItem="IWa-o4-0h0" firstAttribute="top" secondItem="LuI-4h-4vw" secondAttribute="bottom" constant="78" id="mg7-yi-zsm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h7l-oT-9Ms"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLbl" destination="1an-Ny-ztR" id="AzZ-s8-kzG"/>
+                        <outlet property="nombreLbl" destination="IWa-o4-0h0" id="yEE-2g-usf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg0-oU-6Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="128.18590704647679"/>
         </scene>
     </scenes>
 </document>

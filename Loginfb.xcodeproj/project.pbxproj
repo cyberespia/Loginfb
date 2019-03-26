@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DD780FC8BF826BB069D6E5 /* Pods_Loginfb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07E01ACA9EEBC779A18D9DF /* Pods_Loginfb.framework */; };
 		EA38CC8D223C701F004BADAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38CC8C223C701F004BADAB /* AppDelegate.swift */; };
 		EA38CC8F223C701F004BADAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38CC8E223C701F004BADAB /* ViewController.swift */; };
 		EA38CC92223C701F004BADAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA38CC90223C701F004BADAB /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		EA38CC97223C7022004BADAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA38CC95223C7022004BADAB /* LaunchScreen.storyboard */; };
 		EA38CCA2223C7022004BADAB /* LoginfbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38CCA1223C7022004BADAB /* LoginfbTests.swift */; };
 		EA38CCAD223C7023004BADAB /* LoginfbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38CCAC223C7023004BADAB /* LoginfbUITests.swift */; };
+		EA5FC02B223F551100BB9CB2 /* LogeadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FC02A223F551100BB9CB2 /* LogeadoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4270975D33CE8D8259880C /* Pods-Loginfb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loginfb.release.xcconfig"; path = "Target Support Files/Pods-Loginfb/Pods-Loginfb.release.xcconfig"; sourceTree = "<group>"; };
+		B07E01ACA9EEBC779A18D9DF /* Pods_Loginfb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loginfb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC463F70C4C834EF297E7F34 /* Pods-Loginfb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loginfb.debug.xcconfig"; path = "Target Support Files/Pods-Loginfb/Pods-Loginfb.debug.xcconfig"; sourceTree = "<group>"; };
 		EA38CC89223C701E004BADAB /* Loginfb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loginfb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA38CC8C223C701F004BADAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA38CC8E223C701F004BADAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		EA38CCA8223C7023004BADAB /* LoginfbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginfbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA38CCAC223C7023004BADAB /* LoginfbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginfbUITests.swift; sourceTree = "<group>"; };
 		EA38CCAE223C7023004BADAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5FC02A223F551100BB9CB2 /* LogeadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogeadoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DD780FC8BF826BB069D6E5 /* Pods_Loginfb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5907A95CBB664F53A52162 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC463F70C4C834EF297E7F34 /* Pods-Loginfb.debug.xcconfig */,
+				0B4270975D33CE8D8259880C /* Pods-Loginfb.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8D4A59AF0C1D8BAF82C0E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07E01ACA9EEBC779A18D9DF /* Pods_Loginfb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA38CC80223C701E004BADAB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				EA38CCA0223C7022004BADAB /* LoginfbTests */,
 				EA38CCAB223C7023004BADAB /* LoginfbUITests */,
 				EA38CC8A223C701E004BADAB /* Products */,
+				5E5907A95CBB664F53A52162 /* Pods */,
+				D8D4A59AF0C1D8BAF82C0E39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,7 @@
 			children = (
 				EA38CC8C223C701F004BADAB /* AppDelegate.swift */,
 				EA38CC8E223C701F004BADAB /* ViewController.swift */,
+				EA5FC02A223F551100BB9CB2 /* LogeadoViewController.swift */,
 				EA38CC90223C701F004BADAB /* Main.storyboard */,
 				EA38CC93223C7022004BADAB /* Assets.xcassets */,
 				EA38CC95223C7022004BADAB /* LaunchScreen.storyboard */,
@@ -132,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA38CCB1223C7023004BADAB /* Build configuration list for PBXNativeTarget "Loginfb" */;
 			buildPhases = (
+				153F4AA37E3A7046F9BEFF01 /* [CP] Check Pods Manifest.lock */,
 				EA38CC85223C701E004BADAB /* Sources */,
 				EA38CC86223C701E004BADAB /* Frameworks */,
 				EA38CC87223C701E004BADAB /* Resources */,
+				3C80D8529DBE2ED4528929E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,12 +280,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		153F4AA37E3A7046F9BEFF01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loginfb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C80D8529DBE2ED4528929E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loginfb/Pods-Loginfb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loginfb/Pods-Loginfb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA38CC85223C701E004BADAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA38CC8F223C701F004BADAB /* ViewController.swift in Sources */,
+				EA5FC02B223F551100BB9CB2 /* LogeadoViewController.swift in Sources */,
 				EA38CC8D223C701F004BADAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +511,7 @@
 		};
 		EA38CCB2223C7023004BADAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC463F70C4C834EF297E7F34 /* Pods-Loginfb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +530,7 @@
 		};
 		EA38CCB3223C7023004BADAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4270975D33CE8D8259880C /* Pods-Loginfb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
